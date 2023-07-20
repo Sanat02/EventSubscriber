@@ -1148,3 +1148,174 @@ More locations can be added with the 'searchPath' parameter.
 2023-07-20T14:45:02.906+06:00  INFO 18964 --- [http-nio-8778-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-07-20T14:45:02.907+06:00  INFO 18964 --- [http-nio-8778-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2023-07-20T14:45:02.909+06:00  INFO 18964 --- [http-nio-8778-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-07-20T21:17:43.692+06:00  INFO 18964 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-20T21:17:43.740+06:00  INFO 18964 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-07-20T21:18:39.460+06:00  INFO 18648 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.2 with PID 18648 (C:\Users\User\Downloads\Subcriber\demo\target\classes started by User in C:\Users\User\Downloads\Subcriber\demo)
+2023-07-20T21:18:39.468+06:00  INFO 18648 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T21:18:43.587+06:00  INFO 18648 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8778 (http)
+2023-07-20T21:18:43.620+06:00  INFO 18648 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T21:18:43.621+06:00  INFO 18648 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T21:18:44.062+06:00  INFO 18648 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T21:18:44.064+06:00  INFO 18648 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4420 ms
+2023-07-20T21:18:44.652+06:00  INFO 18648 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-20T21:18:45.088+06:00  INFO 18648 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./db/my_db user=ROOT
+2023-07-20T21:18:45.094+06:00  INFO 18648 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-20T21:18:45.290+06:00  INFO 18648 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-07-20T21:18:46.411+06:00  INFO 18648 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-07-20T21:18:47.720+06:00  INFO 18648 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-07-20T21:18:47.957+06:00  INFO 18648 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-07-20T21:18:47.981+06:00  INFO 18648 --- [main] liquibase.util                           : UPDATE SUMMARY
+2023-07-20T21:18:47.982+06:00  INFO 18648 --- [main] liquibase.util                           : Run:                          0
+2023-07-20T21:18:47.985+06:00  INFO 18648 --- [main] liquibase.util                           : Previously run:               4
+2023-07-20T21:18:47.986+06:00  INFO 18648 --- [main] liquibase.util                           : Filtered out:                 0
+2023-07-20T21:18:47.986+06:00  INFO 18648 --- [main] liquibase.util                           : -------------------------------
+2023-07-20T21:18:47.987+06:00  INFO 18648 --- [main] liquibase.util                           : Total change sets:            4
+
+2023-07-20T21:18:47.990+06:00  INFO 18648 --- [main] liquibase.util                           : Update summary generated
+2023-07-20T21:18:47.999+06:00  INFO 18648 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-07-20T21:18:48.011+06:00  INFO 18648 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-07-20T21:18:48.013+06:00  INFO 18648 --- [main] liquibase.command                        : Command execution complete
+2023-07-20T21:18:49.277+06:00  INFO 18648 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8778 (http) with context path ''
+2023-07-20T21:18:49.300+06:00  INFO 18648 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 11.667 seconds (process running for 14.124)
+2023-07-20T21:18:58.464+06:00  INFO 18648 --- [http-nio-8778-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-20T21:18:58.465+06:00  INFO 18648 --- [http-nio-8778-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-20T21:18:58.467+06:00  INFO 18648 --- [http-nio-8778-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-07-20T21:18:58.751+06:00  WARN 18648 --- [http-nio-8778-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.ModelAttributeMethodProcessor$1: Validation failed for argument [0] in public void com.example.demo.controllers.EventSubscribeController.subscribeToEvent(com.example.demo.dto.EventSubscribeDto): [Field error in object 'eventSubscribeDto' on field 'id': rejected value [null]; codes [typeMismatch.eventSubscribeDto.id,typeMismatch.id,typeMismatch.int,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [eventSubscribeDto.id,id]; arguments []; default message [id]]; default message [Failed to convert value of type 'null' to required type 'int'; Failed to convert from type [null] to type [int] for value [null]]] ]
+2023-07-20T21:21:18.691+06:00  INFO 18648 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-20T21:21:18.755+06:00  INFO 18648 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-07-20T21:21:56.516+06:00  INFO 14636 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.2 with PID 14636 (C:\Users\User\Downloads\Subcriber\demo\target\classes started by User in C:\Users\User\Downloads\Subcriber\demo)
+2023-07-20T21:21:56.524+06:00  INFO 14636 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T21:22:00.413+06:00  INFO 14636 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8778 (http)
+2023-07-20T21:22:00.442+06:00  INFO 14636 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T21:22:00.444+06:00  INFO 14636 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T21:22:00.860+06:00  INFO 14636 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T21:22:00.861+06:00  INFO 14636 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4170 ms
+2023-07-20T21:22:01.381+06:00  INFO 14636 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-20T21:22:01.713+06:00  INFO 14636 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./db/my_db user=ROOT
+2023-07-20T21:22:01.720+06:00  INFO 14636 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-20T21:22:01.989+06:00  INFO 14636 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-07-20T21:22:02.959+06:00  INFO 14636 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-07-20T21:22:04.202+06:00  INFO 14636 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-07-20T21:22:04.419+06:00  INFO 14636 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-07-20T21:22:04.441+06:00  INFO 14636 --- [main] liquibase.util                           : UPDATE SUMMARY
+2023-07-20T21:22:04.442+06:00  INFO 14636 --- [main] liquibase.util                           : Run:                          0
+2023-07-20T21:22:04.444+06:00  INFO 14636 --- [main] liquibase.util                           : Previously run:               4
+2023-07-20T21:22:04.445+06:00  INFO 14636 --- [main] liquibase.util                           : Filtered out:                 0
+2023-07-20T21:22:04.446+06:00  INFO 14636 --- [main] liquibase.util                           : -------------------------------
+2023-07-20T21:22:04.447+06:00  INFO 14636 --- [main] liquibase.util                           : Total change sets:            4
+
+2023-07-20T21:22:04.453+06:00  INFO 14636 --- [main] liquibase.util                           : Update summary generated
+2023-07-20T21:22:04.464+06:00  INFO 14636 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-07-20T21:22:04.476+06:00  INFO 14636 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-07-20T21:22:04.478+06:00  INFO 14636 --- [main] liquibase.command                        : Command execution complete
+2023-07-20T21:22:05.865+06:00  INFO 14636 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8778 (http) with context path ''
+2023-07-20T21:22:05.892+06:00  INFO 14636 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 11.171 seconds (process running for 13.718)
+2023-07-20T21:22:33.128+06:00  INFO 14636 --- [http-nio-8778-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-20T21:22:33.130+06:00  INFO 14636 --- [http-nio-8778-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-20T21:22:33.133+06:00  INFO 14636 --- [http-nio-8778-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-07-20T21:22:33.511+06:00  WARN 14636 --- [http-nio-8778-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.ModelAttributeMethodProcessor$1: Validation failed for argument [0] in public void com.example.demo.controllers.EventSubscribeController.subscribeToEvent(com.example.demo.dto.EventSubscribeDto): [Field error in object 'eventSubscribeDto' on field 'id': rejected value [null]; codes [typeMismatch.eventSubscribeDto.id,typeMismatch.id,typeMismatch.int,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [eventSubscribeDto.id,id]; arguments []; default message [id]]; default message [Failed to convert value of type 'null' to required type 'int'; Failed to convert from type [null] to type [int] for value [null]]] ]
+2023-07-20T21:22:37.240+06:00  WARN 14636 --- [http-nio-8778-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.ModelAttributeMethodProcessor$1: Validation failed for argument [0] in public void com.example.demo.controllers.EventSubscribeController.subscribeToEvent(com.example.demo.dto.EventSubscribeDto): [Field error in object 'eventSubscribeDto' on field 'id': rejected value [null]; codes [typeMismatch.eventSubscribeDto.id,typeMismatch.id,typeMismatch.int,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [eventSubscribeDto.id,id]; arguments []; default message [id]]; default message [Failed to convert value of type 'null' to required type 'int'; Failed to convert from type [null] to type [int] for value [null]]] ]
+2023-07-20T21:24:31.843+06:00  INFO 14636 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-20T21:24:31.864+06:00  INFO 14636 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-07-20T21:25:14.122+06:00  INFO 14704 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.2 with PID 14704 (C:\Users\User\Downloads\Subcriber\demo\target\classes started by User in C:\Users\User\Downloads\Subcriber\demo)
+2023-07-20T21:25:14.133+06:00  INFO 14704 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T21:25:18.453+06:00  INFO 14704 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8778 (http)
+2023-07-20T21:25:18.847+06:00  INFO 14704 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4484 ms
+2023-07-20T21:25:19.411+06:00  INFO 14704 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-20T21:25:19.763+06:00  INFO 14704 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./db/my_db user=ROOT
+2023-07-20T21:25:19.768+06:00  INFO 14704 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-20T21:25:23.808+06:00  INFO 14704 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8778 (http) with context path ''
+2023-07-20T21:25:23.837+06:00  INFO 14704 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 12.01 seconds (process running for 15.728)
+2023-07-20T21:25:23.886+06:00  INFO 14704 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-20T21:25:23.907+06:00  INFO 14704 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-07-20T21:25:50.281+06:00  INFO 16192 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.2 with PID 16192 (C:\Users\User\Downloads\Subcriber\demo\target\classes started by User in C:\Users\User\Downloads\Subcriber\demo)
+2023-07-20T21:25:50.291+06:00  INFO 16192 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T21:25:54.127+06:00  INFO 16192 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8778 (http)
+2023-07-20T21:25:54.181+06:00  INFO 16192 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T21:25:54.183+06:00  INFO 16192 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T21:25:54.516+06:00  INFO 16192 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T21:25:54.518+06:00  INFO 16192 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4043 ms
+2023-07-20T21:25:55.227+06:00  INFO 16192 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-20T21:25:55.582+06:00  INFO 16192 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./db/my_db user=ROOT
+2023-07-20T21:25:55.588+06:00  INFO 16192 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-20T21:25:55.857+06:00  INFO 16192 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-07-20T21:25:58.128+06:00  INFO 16192 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-07-20T21:25:59.335+06:00  INFO 16192 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-07-20T21:25:59.496+06:00  INFO 16192 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-07-20T21:25:59.515+06:00  INFO 16192 --- [main] liquibase.util                           : UPDATE SUMMARY
+2023-07-20T21:25:59.516+06:00  INFO 16192 --- [main] liquibase.util                           : Run:                          0
+2023-07-20T21:25:59.518+06:00  INFO 16192 --- [main] liquibase.util                           : Previously run:               4
+2023-07-20T21:25:59.520+06:00  INFO 16192 --- [main] liquibase.util                           : Filtered out:                 0
+2023-07-20T21:25:59.520+06:00  INFO 16192 --- [main] liquibase.util                           : -------------------------------
+2023-07-20T21:25:59.521+06:00  INFO 16192 --- [main] liquibase.util                           : Total change sets:            4
+
+2023-07-20T21:25:59.524+06:00  INFO 16192 --- [main] liquibase.util                           : Update summary generated
+2023-07-20T21:25:59.533+06:00  INFO 16192 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-07-20T21:25:59.550+06:00  INFO 16192 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-07-20T21:25:59.553+06:00  INFO 16192 --- [main] liquibase.command                        : Command execution complete
+2023-07-20T21:26:01.044+06:00  INFO 16192 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8778 (http) with context path ''
+2023-07-20T21:26:01.066+06:00  INFO 16192 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 12.595 seconds (process running for 14.837)
+2023-07-20T21:26:01.564+06:00  INFO 16192 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-20T21:26:01.582+06:00  INFO 16192 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-07-20T21:26:14.483+06:00  INFO 8536 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.2 with PID 8536 (C:\Users\User\Downloads\Subcriber\demo\target\classes started by User in C:\Users\User\Downloads\Subcriber\demo)
+2023-07-20T21:26:14.490+06:00  INFO 8536 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T21:26:18.255+06:00  INFO 8536 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8778 (http)
+2023-07-20T21:26:18.283+06:00  INFO 8536 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T21:26:18.285+06:00  INFO 8536 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T21:26:18.667+06:00  INFO 8536 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T21:26:18.669+06:00  INFO 8536 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4009 ms
+2023-07-20T21:26:19.204+06:00  INFO 8536 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-20T21:26:19.554+06:00  INFO 8536 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./db/my_db user=ROOT
+2023-07-20T21:26:19.561+06:00  INFO 8536 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-20T21:26:19.707+06:00  INFO 8536 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-07-20T21:26:20.613+06:00  INFO 8536 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-07-20T21:26:21.696+06:00  INFO 8536 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-07-20T21:26:21.846+06:00  INFO 8536 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-07-20T21:26:21.909+06:00  INFO 8536 --- [main] liquibase.util                           : UPDATE SUMMARY
+2023-07-20T21:26:21.910+06:00  INFO 8536 --- [main] liquibase.util                           : Run:                          0
+2023-07-20T21:26:21.917+06:00  INFO 8536 --- [main] liquibase.util                           : Previously run:               4
+2023-07-20T21:26:21.919+06:00  INFO 8536 --- [main] liquibase.util                           : Filtered out:                 0
+2023-07-20T21:26:21.921+06:00  INFO 8536 --- [main] liquibase.util                           : -------------------------------
+2023-07-20T21:26:21.927+06:00  INFO 8536 --- [main] liquibase.util                           : Total change sets:            4
+
+2023-07-20T21:26:21.931+06:00  INFO 8536 --- [main] liquibase.util                           : Update summary generated
+2023-07-20T21:26:21.947+06:00  INFO 8536 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-07-20T21:26:21.961+06:00  INFO 8536 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-07-20T21:26:21.964+06:00  INFO 8536 --- [main] liquibase.command                        : Command execution complete
+2023-07-20T21:26:23.105+06:00  INFO 8536 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8778 (http) with context path ''
+2023-07-20T21:26:23.127+06:00  INFO 8536 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 10.333 seconds (process running for 12.534)
+2023-07-20T21:27:03.578+06:00  INFO 8536 --- [http-nio-8778-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-20T21:27:03.579+06:00  INFO 8536 --- [http-nio-8778-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-20T21:27:03.582+06:00  INFO 8536 --- [http-nio-8778-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-07-20T21:31:32.437+06:00  INFO 8536 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-20T21:31:32.459+06:00  INFO 8536 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-07-20T21:32:03.226+06:00  INFO 7164 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.2 with PID 7164 (C:\Users\User\Downloads\Subcriber\demo\target\classes started by User in C:\Users\User\Downloads\Subcriber\demo)
+2023-07-20T21:32:03.236+06:00  INFO 7164 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T21:32:07.274+06:00  INFO 7164 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8778 (http)
+2023-07-20T21:32:07.346+06:00  INFO 7164 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T21:32:07.348+06:00  INFO 7164 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T21:32:07.690+06:00  INFO 7164 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T21:32:07.691+06:00  INFO 7164 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4177 ms
+2023-07-20T21:32:08.256+06:00  INFO 7164 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-20T21:32:08.646+06:00  INFO 7164 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./db/my_db user=ROOT
+2023-07-20T21:32:08.652+06:00  INFO 7164 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-20T21:32:08.825+06:00  INFO 7164 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-07-20T21:32:09.770+06:00  INFO 7164 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-07-20T21:32:10.915+06:00  INFO 7164 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-07-20T21:32:11.065+06:00  INFO 7164 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-07-20T21:32:11.084+06:00  INFO 7164 --- [main] liquibase.util                           : UPDATE SUMMARY
+2023-07-20T21:32:11.085+06:00  INFO 7164 --- [main] liquibase.util                           : Run:                          0
+2023-07-20T21:32:11.087+06:00  INFO 7164 --- [main] liquibase.util                           : Previously run:               4
+2023-07-20T21:32:11.088+06:00  INFO 7164 --- [main] liquibase.util                           : Filtered out:                 0
+2023-07-20T21:32:11.088+06:00  INFO 7164 --- [main] liquibase.util                           : -------------------------------
+2023-07-20T21:32:11.089+06:00  INFO 7164 --- [main] liquibase.util                           : Total change sets:            4
+
+2023-07-20T21:32:11.092+06:00  INFO 7164 --- [main] liquibase.util                           : Update summary generated
+2023-07-20T21:32:11.100+06:00  INFO 7164 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-07-20T21:32:11.111+06:00  INFO 7164 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-07-20T21:32:11.113+06:00  INFO 7164 --- [main] liquibase.command                        : Command execution complete
+2023-07-20T21:32:12.236+06:00  INFO 7164 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8778 (http) with context path ''
+2023-07-20T21:32:12.258+06:00  INFO 7164 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 10.786 seconds (process running for 13.023)
+2023-07-20T21:32:35.665+06:00  INFO 7164 --- [http-nio-8778-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-20T21:32:35.667+06:00  INFO 7164 --- [http-nio-8778-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-20T21:32:35.669+06:00  INFO 7164 --- [http-nio-8778-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms

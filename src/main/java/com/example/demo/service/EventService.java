@@ -17,7 +17,6 @@ public class EventService {
         List<Event> events = eventDao.getAllEvents();
         return events.stream()
                 .map(e -> EventDto.builder()
-                        .id(e.getId())
                         .description(e.getDescription())
                         .name(e.getName())
                         .dateAndTime(e.getDateAndTime())

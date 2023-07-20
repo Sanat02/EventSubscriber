@@ -11,7 +11,7 @@ import java.time.format.DateTimeFormatter;
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class Event {
-    private int id;
+    private Integer id;
     private LocalDateTime dateAndTime;
     private String name;
     private String description;

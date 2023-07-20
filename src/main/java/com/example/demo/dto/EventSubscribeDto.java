@@ -4,13 +4,12 @@ import lombok.Builder;
 import lombok.Data;
 
 import java.time.LocalDateTime;
-import java.time.LocalTime;
 
 @Data
 @Builder
-public class EventDto {
+public class EventSubscribeDto {
     private Integer id;
-    private LocalDateTime dateAndTime;
-    private String name;
-    private String description;
+    private int eventId;
+    private String email;
+    private LocalDateTime registrationDate;
 }
