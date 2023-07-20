@@ -1,18 +1,25 @@
 package com.example.demo.models;
 
-import lombok.AccessLevel;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
-import java.time.LocalTime;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 
 @Data
+@Builder
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class Event {
     private int id;
-    private LocalTime dateAndTime;
+    private LocalDateTime dateAndTime;
     private String name;
     private String description;
+
+
+
+
+
+
+
 }
