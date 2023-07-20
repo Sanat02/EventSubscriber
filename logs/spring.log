@@ -1319,3 +1319,155 @@ More locations can be added with the 'searchPath' parameter.
 2023-07-20T21:32:35.665+06:00  INFO 7164 --- [http-nio-8778-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-07-20T21:32:35.667+06:00  INFO 7164 --- [http-nio-8778-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2023-07-20T21:32:35.669+06:00  INFO 7164 --- [http-nio-8778-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-07-20T21:43:29.540+06:00  INFO 7164 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-20T21:43:29.574+06:00  INFO 7164 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-07-20T21:43:54.324+06:00  INFO 17612 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.2 with PID 17612 (C:\Users\User\Downloads\Subcriber\demo\target\classes started by User in C:\Users\User\Downloads\Subcriber\demo)
+2023-07-20T21:43:54.332+06:00  INFO 17612 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T21:43:58.875+06:00  INFO 17612 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8778 (http)
+2023-07-20T21:43:58.903+06:00  INFO 17612 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T21:43:58.904+06:00  INFO 17612 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T21:43:59.355+06:00  INFO 17612 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T21:43:59.357+06:00  INFO 17612 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4553 ms
+2023-07-20T21:43:59.916+06:00  INFO 17612 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-20T21:44:00.326+06:00  INFO 17612 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./db/my_db user=ROOT
+2023-07-20T21:44:00.344+06:00  INFO 17612 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-20T21:44:00.526+06:00  INFO 17612 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-07-20T21:44:01.469+06:00  INFO 17612 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-07-20T21:44:02.528+06:00  INFO 17612 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-07-20T21:44:02.742+06:00  INFO 17612 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-07-20T21:44:02.770+06:00  INFO 17612 --- [main] liquibase.util                           : UPDATE SUMMARY
+2023-07-20T21:44:02.771+06:00  INFO 17612 --- [main] liquibase.util                           : Run:                          0
+2023-07-20T21:44:02.774+06:00  INFO 17612 --- [main] liquibase.util                           : Previously run:               4
+2023-07-20T21:44:02.775+06:00  INFO 17612 --- [main] liquibase.util                           : Filtered out:                 0
+2023-07-20T21:44:02.775+06:00  INFO 17612 --- [main] liquibase.util                           : -------------------------------
+2023-07-20T21:44:02.775+06:00  INFO 17612 --- [main] liquibase.util                           : Total change sets:            4
+
+2023-07-20T21:44:02.781+06:00  INFO 17612 --- [main] liquibase.util                           : Update summary generated
+2023-07-20T21:44:02.794+06:00  INFO 17612 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-07-20T21:44:02.809+06:00  INFO 17612 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-07-20T21:44:02.811+06:00  INFO 17612 --- [main] liquibase.command                        : Command execution complete
+2023-07-20T21:44:04.038+06:00  INFO 17612 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8778 (http) with context path ''
+2023-07-20T21:44:04.060+06:00  INFO 17612 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 11.711 seconds (process running for 14.097)
+2023-07-20T21:44:33.047+06:00  INFO 17612 --- [http-nio-8778-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-20T21:44:33.049+06:00  INFO 17612 --- [http-nio-8778-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-20T21:44:33.055+06:00  INFO 17612 --- [http-nio-8778-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2023-07-20T21:44:33.328+06:00 ERROR 17612 --- [http-nio-8778-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.example.demo.models.Event.getDateAndTime()" because the return value of "com.example.demo.dao.EventDao.getEventById(int)" is null] with root cause
+
+java.lang.NullPointerException: Cannot invoke "com.example.demo.models.Event.getDateAndTime()" because the return value of "com.example.demo.dao.EventDao.getEventById(int)" is null
+	at com.example.demo.service.EventSubscribeService.subscribeToEvent(EventSubscribeService.java:21) ~[classes/:na]
+	at com.example.demo.controllers.EventSubscribeController.subscribeToEvent(EventSubscribeController.java:22) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.10.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.10.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-07-20T21:46:37.049+06:00  INFO 17612 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-20T21:46:37.070+06:00  INFO 17612 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-07-20T21:47:01.746+06:00  INFO 10596 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.2 with PID 10596 (C:\Users\User\Downloads\Subcriber\demo\target\classes started by User in C:\Users\User\Downloads\Subcriber\demo)
+2023-07-20T21:47:01.753+06:00  INFO 10596 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T21:47:05.665+06:00  INFO 10596 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8778 (http)
+2023-07-20T21:47:05.695+06:00  INFO 10596 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T21:47:05.697+06:00  INFO 10596 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T21:47:06.025+06:00  INFO 10596 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T21:47:06.026+06:00  INFO 10596 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4099 ms
+2023-07-20T21:47:06.605+06:00  INFO 10596 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-20T21:47:06.978+06:00  INFO 10596 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./db/my_db user=ROOT
+2023-07-20T21:47:06.985+06:00  INFO 10596 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-20T21:47:07.211+06:00  INFO 10596 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-07-20T21:47:08.272+06:00  INFO 10596 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-07-20T21:47:09.390+06:00  INFO 10596 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-07-20T21:47:09.531+06:00  INFO 10596 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-07-20T21:47:09.551+06:00  INFO 10596 --- [main] liquibase.util                           : UPDATE SUMMARY
+2023-07-20T21:47:09.552+06:00  INFO 10596 --- [main] liquibase.util                           : Run:                          0
+2023-07-20T21:47:09.555+06:00  INFO 10596 --- [main] liquibase.util                           : Previously run:               4
+2023-07-20T21:47:09.556+06:00  INFO 10596 --- [main] liquibase.util                           : Filtered out:                 0
+2023-07-20T21:47:09.556+06:00  INFO 10596 --- [main] liquibase.util                           : -------------------------------
+2023-07-20T21:47:09.557+06:00  INFO 10596 --- [main] liquibase.util                           : Total change sets:            4
+
+2023-07-20T21:47:09.560+06:00  INFO 10596 --- [main] liquibase.util                           : Update summary generated
+2023-07-20T21:47:09.569+06:00  INFO 10596 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-07-20T21:47:09.580+06:00  INFO 10596 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-07-20T21:47:09.586+06:00  INFO 10596 --- [main] liquibase.command                        : Command execution complete
+2023-07-20T21:47:10.829+06:00  INFO 10596 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8778 (http) with context path ''
+2023-07-20T21:47:10.854+06:00  INFO 10596 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 10.938 seconds (process running for 15.915)
+2023-07-20T21:47:19.858+06:00  INFO 10596 --- [http-nio-8778-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-20T21:47:19.866+06:00  INFO 10596 --- [http-nio-8778-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-20T21:47:19.869+06:00  INFO 10596 --- [http-nio-8778-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-07-20T21:49:03.444+06:00  INFO 10596 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-20T21:49:03.466+06:00  INFO 10596 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-07-20T21:49:17.901+06:00  INFO 11796 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.2 with PID 11796 (C:\Users\User\Downloads\Subcriber\demo\target\classes started by User in C:\Users\User\Downloads\Subcriber\demo)
+2023-07-20T21:49:17.909+06:00  INFO 11796 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T21:49:21.830+06:00  INFO 11796 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8778 (http)
+2023-07-20T21:49:21.858+06:00  INFO 11796 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T21:49:21.859+06:00  INFO 11796 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T21:49:22.282+06:00  INFO 11796 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T21:49:22.287+06:00  INFO 11796 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4202 ms
+2023-07-20T21:49:22.815+06:00  INFO 11796 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-20T21:49:23.144+06:00  INFO 11796 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./db/my_db user=ROOT
+2023-07-20T21:49:23.153+06:00  INFO 11796 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-20T21:49:23.428+06:00  INFO 11796 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-07-20T21:49:24.469+06:00  INFO 11796 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-07-20T21:49:25.525+06:00  INFO 11796 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-07-20T21:49:25.691+06:00  INFO 11796 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-07-20T21:49:25.736+06:00  INFO 11796 --- [main] liquibase.util                           : UPDATE SUMMARY
+2023-07-20T21:49:25.738+06:00  INFO 11796 --- [main] liquibase.util                           : Run:                          0
+2023-07-20T21:49:25.749+06:00  INFO 11796 --- [main] liquibase.util                           : Previously run:               4
+2023-07-20T21:49:25.751+06:00  INFO 11796 --- [main] liquibase.util                           : Filtered out:                 0
+2023-07-20T21:49:25.752+06:00  INFO 11796 --- [main] liquibase.util                           : -------------------------------
+2023-07-20T21:49:25.762+06:00  INFO 11796 --- [main] liquibase.util                           : Total change sets:            4
+
+2023-07-20T21:49:25.766+06:00  INFO 11796 --- [main] liquibase.util                           : Update summary generated
+2023-07-20T21:49:25.783+06:00  INFO 11796 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-07-20T21:49:25.796+06:00  INFO 11796 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-07-20T21:49:25.798+06:00  INFO 11796 --- [main] liquibase.command                        : Command execution complete
+2023-07-20T21:49:26.938+06:00  INFO 11796 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8778 (http) with context path ''
+2023-07-20T21:49:26.969+06:00  INFO 11796 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 10.873 seconds (process running for 13.525)
+2023-07-20T21:49:39.107+06:00  INFO 11796 --- [http-nio-8778-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-20T21:49:39.108+06:00  INFO 11796 --- [http-nio-8778-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-20T21:49:39.110+06:00  INFO 11796 --- [http-nio-8778-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
