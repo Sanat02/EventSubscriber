@@ -31,5 +31,8 @@ public class EventService {
                 .build();
         eventDao.createEvent(event);
     }
+    public Event getEventById(int id){
+        return eventDao.getEventById(id);
+    }
 
 }
