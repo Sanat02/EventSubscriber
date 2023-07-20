@@ -1,0 +1,32 @@
+databaseChangeLog:
+  - changeSet:
+      id: 03-create-event-subscriber-table
+      author: Sanat
+      changes:
+        - createTable:
+            tableName: event_subscribers
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: eventId
+                  type: int
+                  constraints:
+                    nullable: false
+                    foreignKeyName: fk_event_subscriber_id
+                    references: events(id)
+                    onDelete: CASCADE
+                    onUpdate: CASCADE
+              - column:
+                  name: email
+                  type: varchar(55)
+              - column:
+                  name: registrationDate
+                  type: dateTime
+
+

@@ -1,0 +1,893 @@
+2023-07-20T12:16:17.247+06:00  INFO 16872 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.2 with PID 16872 (C:\Users\User\Downloads\Subcriber\demo\target\classes started by User in C:\Users\User\Downloads\Subcriber\demo)
+2023-07-20T12:16:17.256+06:00  INFO 16872 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T12:16:21.150+06:00  INFO 16872 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8779 (http)
+2023-07-20T12:16:21.180+06:00  INFO 16872 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T12:16:21.182+06:00  INFO 16872 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T12:16:21.583+06:00  INFO 16872 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T12:16:21.585+06:00  INFO 16872 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4069 ms
+2023-07-20T12:16:23.137+06:00  INFO 16872 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-20T12:16:24.277+06:00  INFO 16872 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn1: url=jdbc:h2:./db/my_db user=ROOT
+2023-07-20T12:16:24.284+06:00  INFO 16872 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-20T12:16:24.535+06:00  INFO 16872 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-07-20T12:16:25.509+06:00  INFO 16872 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-07-20T12:16:25.686+06:00  INFO 16872 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-07-20T12:16:25.688+06:00  INFO 16872 --- [main] liquibase.command                        : Command execution complete
+2023-07-20T12:16:25.691+06:00  WARN 16872 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.ChangeLogParseException: classpath:/db/changelog/master.yaml does not exist
+2023-07-20T12:16:25.692+06:00  INFO 16872 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-20T12:16:25.728+06:00  INFO 16872 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-07-20T12:16:25.745+06:00  INFO 16872 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-07-20T12:16:25.790+06:00  INFO 16872 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-07-20T12:16:25.876+06:00 ERROR 16872 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Liquibase failed to start because no changelog could be found at 'classpath:/db/changelog/master.yaml'.
+
+Action:
+
+Make sure a Liquibase changelog is present at the configured path.
+
+2023-07-20T12:21:09.949+06:00  INFO 15828 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.2 with PID 15828 (C:\Users\User\Downloads\Subcriber\demo\target\classes started by User in C:\Users\User\Downloads\Subcriber\demo)
+2023-07-20T12:21:09.958+06:00  INFO 15828 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T12:21:13.941+06:00  INFO 15828 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8779 (http)
+2023-07-20T12:21:13.972+06:00  INFO 15828 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T12:21:13.974+06:00  INFO 15828 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T12:21:14.410+06:00  INFO 15828 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T12:21:14.411+06:00  INFO 15828 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4189 ms
+2023-07-20T12:21:15.903+06:00  INFO 15828 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-20T12:21:17.057+06:00  INFO 15828 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn1: url=jdbc:h2:./db/my_db user=ROOT
+2023-07-20T12:21:17.064+06:00  INFO 15828 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-20T12:21:17.309+06:00  INFO 15828 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-07-20T12:21:18.265+06:00  INFO 15828 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-07-20T12:21:18.452+06:00  INFO 15828 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-07-20T12:21:18.454+06:00  INFO 15828 --- [main] liquibase.command                        : Command execution complete
+2023-07-20T12:21:18.457+06:00  WARN 15828 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.ChangeLogParseException: classpath:/db/changelog/master.yaml does not exist
+2023-07-20T12:21:18.459+06:00  INFO 15828 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-20T12:21:18.531+06:00  INFO 15828 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-07-20T12:21:18.547+06:00  INFO 15828 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-07-20T12:21:18.583+06:00  INFO 15828 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-07-20T12:21:18.697+06:00 ERROR 15828 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Liquibase failed to start because no changelog could be found at 'classpath:/db/changelog/master.yaml'.
+
+Action:
+
+Make sure a Liquibase changelog is present at the configured path.
+
+2023-07-20T12:23:05.481+06:00  INFO 1712 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.2 with PID 1712 (C:\Users\User\Downloads\Subcriber\demo\target\classes started by User in C:\Users\User\Downloads\Subcriber\demo)
+2023-07-20T12:23:05.488+06:00  INFO 1712 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T12:23:09.965+06:00  INFO 1712 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8779 (http)
+2023-07-20T12:23:09.995+06:00  INFO 1712 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T12:23:09.997+06:00  INFO 1712 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T12:23:10.392+06:00  INFO 1712 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T12:23:10.393+06:00  INFO 1712 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4729 ms
+2023-07-20T12:23:11.886+06:00  INFO 1712 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-20T12:23:12.953+06:00  INFO 1712 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn1: url=jdbc:h2:./db/my_db user=ROOT
+2023-07-20T12:23:12.959+06:00  INFO 1712 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-20T12:23:13.148+06:00  INFO 1712 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-07-20T12:23:15.166+06:00  INFO 1712 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-07-20T12:23:15.490+06:00  INFO 1712 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-07-20T12:23:15.492+06:00  INFO 1712 --- [main] liquibase.command                        : Command execution complete
+2023-07-20T12:23:15.495+06:00  WARN 1712 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.ChangeLogParseException: Error parsing classpath:/db/changelog/master.yaml : The file db/changelog/initial/019_create_categories_table.yaml was not found in the configured search path:
+    - Spring classpath
+More locations can be added with the 'searchPath' parameter.
+2023-07-20T12:23:15.496+06:00  INFO 1712 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-20T12:23:15.550+06:00  INFO 1712 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-07-20T12:23:15.563+06:00  INFO 1712 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-07-20T12:23:15.594+06:00  INFO 1712 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-07-20T12:23:15.655+06:00 ERROR 1712 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.ChangeLogParseException: Error parsing classpath:/db/changelog/master.yaml : The file db/changelog/initial/019_create_categories_table.yaml was not found in the configured search path:
+    - Spring classpath
+More locations can be added with the 'searchPath' parameter.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:941) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.1.1.jar:3.1.1]
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10) ~[classes/:na]
+Caused by: liquibase.exception.CommandExecutionException: liquibase.exception.ChangeLogParseException: Error parsing classpath:/db/changelog/master.yaml : The file db/changelog/initial/019_create_categories_table.yaml was not found in the configured search path:
+    - Spring classpath
+More locations can be added with the 'searchPath' parameter.
+	at liquibase.command.CommandScope.execute(CommandScope.java:236) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Liquibase.lambda$update$0(Liquibase.java:223) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:197) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.child(Scope.java:206) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.child(Scope.java:196) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.child(Scope.java:175) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Liquibase.runInScope(Liquibase.java:1361) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:215) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:197) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:329) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:284) ~[liquibase-core-4.23.0.jar:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766) ~[spring-beans-6.0.10.jar:6.0.10]
+	... 18 common frames omitted
+Caused by: liquibase.exception.ChangeLogParseException: Error parsing classpath:/db/changelog/master.yaml : The file db/changelog/initial/019_create_categories_table.yaml was not found in the configured search path:
+    - Spring classpath
+More locations can be added with the 'searchPath' parameter.
+	at liquibase.parser.core.yaml.YamlChangeLogParser.parse(YamlChangeLogParser.java:94) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.getDatabaseChangeLog(DatabaseChangelogCommandStep.java:114) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.run(DatabaseChangelogCommandStep.java:92) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.command.CommandScope.execute(CommandScope.java:213) ~[liquibase-core-4.23.0.jar:na]
+	... 30 common frames omitted
+Caused by: liquibase.exception.SetupException: The file db/changelog/initial/019_create_categories_table.yaml was not found in the configured search path:
+    - Spring classpath
+More locations can be added with the 'searchPath' parameter.
+	at liquibase.changelog.DatabaseChangeLog.handleChildNode(DatabaseChangeLog.java:455) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.changelog.DatabaseChangeLog.load(DatabaseChangeLog.java:378) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.parser.core.yaml.YamlChangeLogParser.parse(YamlChangeLogParser.java:88) ~[liquibase-core-4.23.0.jar:na]
+	... 33 common frames omitted
+Caused by: liquibase.exception.ChangeLogParseException: The file db/changelog/initial/019_create_categories_table.yaml was not found in the configured search path:
+    - Spring classpath
+More locations can be added with the 'searchPath' parameter.
+	at liquibase.changelog.DatabaseChangeLog.include(DatabaseChangeLog.java:848) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.changelog.DatabaseChangeLog.handleChildNode(DatabaseChangeLog.java:445) ~[liquibase-core-4.23.0.jar:na]
+	... 35 common frames omitted
+
+2023-07-20T12:26:05.821+06:00  INFO 7388 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.2 with PID 7388 (C:\Users\User\Downloads\Subcriber\demo\target\classes started by User in C:\Users\User\Downloads\Subcriber\demo)
+2023-07-20T12:26:05.909+06:00  INFO 7388 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T12:26:10.194+06:00  INFO 7388 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8779 (http)
+2023-07-20T12:26:10.226+06:00  INFO 7388 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T12:26:10.228+06:00  INFO 7388 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T12:26:10.712+06:00  INFO 7388 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T12:26:10.714+06:00  INFO 7388 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4604 ms
+2023-07-20T12:26:12.733+06:00  INFO 7388 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-20T12:26:13.967+06:00  INFO 7388 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn1: url=jdbc:h2:./db/my_db user=ROOT
+2023-07-20T12:26:13.973+06:00  INFO 7388 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-20T12:26:14.165+06:00  INFO 7388 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-07-20T12:26:15.169+06:00  INFO 7388 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-07-20T12:26:16.119+06:00  INFO 7388 --- [main] liquibase.changelog                      : Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2023-07-20T12:26:16.146+06:00  INFO 7388 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-07-20T12:26:16.282+06:00  INFO 7388 --- [main] liquibase.command                        : Using deploymentId: 9834376159
+2023-07-20T12:26:16.287+06:00  INFO 7388 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-07-20T12:26:16.464+06:00  INFO 7388 --- [main] liquibase.changelog                      : Table users created
+2023-07-20T12:26:16.467+06:00  INFO 7388 --- [main] liquibase.changelog                      : ChangeSet db/changelog/initial/001_create_users_table.yaml::01-create-users-table::Sanat ran successfully in 20ms
+2023-07-20T12:26:16.497+06:00  INFO 7388 --- [main] liquibase.util                           : UPDATE SUMMARY
+2023-07-20T12:26:16.500+06:00  INFO 7388 --- [main] liquibase.util                           : Run:                          1
+2023-07-20T12:26:16.501+06:00  INFO 7388 --- [main] liquibase.util                           : Previously run:               0
+2023-07-20T12:26:16.502+06:00  INFO 7388 --- [main] liquibase.util                           : Filtered out:                 0
+2023-07-20T12:26:16.503+06:00  INFO 7388 --- [main] liquibase.util                           : -------------------------------
+2023-07-20T12:26:16.504+06:00  INFO 7388 --- [main] liquibase.util                           : Total change sets:            1
+
+2023-07-20T12:26:16.506+06:00  INFO 7388 --- [main] liquibase.util                           : Update summary generated
+2023-07-20T12:26:16.508+06:00  INFO 7388 --- [main] liquibase.command                        : Update command completed successfully.
+2023-07-20T12:26:16.520+06:00  INFO 7388 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-07-20T12:26:16.529+06:00  INFO 7388 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-07-20T12:26:16.530+06:00  INFO 7388 --- [main] liquibase.command                        : Command execution complete
+2023-07-20T12:26:16.837+06:00  INFO 7388 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8779 (http) with context path ''
+2023-07-20T12:26:16.863+06:00  INFO 7388 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 12.806 seconds (process running for 15.2)
+2023-07-20T12:31:01.785+06:00  INFO 3068 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.2 with PID 3068 (C:\Users\User\Downloads\Subcriber\demo\target\classes started by User in C:\Users\User\Downloads\Subcriber\demo)
+2023-07-20T12:31:01.799+06:00  INFO 3068 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T12:31:05.744+06:00  INFO 3068 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8779 (http)
+2023-07-20T12:31:05.774+06:00  INFO 3068 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T12:31:05.776+06:00  INFO 3068 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T12:31:06.155+06:00  INFO 3068 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T12:31:06.156+06:00  INFO 3068 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4088 ms
+2023-07-20T12:31:07.708+06:00  INFO 3068 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-20T12:31:08.101+06:00  INFO 3068 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./db/my_db user=ROOT
+2023-07-20T12:31:08.109+06:00  INFO 3068 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-20T12:31:08.280+06:00  INFO 3068 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-07-20T12:31:09.300+06:00  INFO 3068 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-07-20T12:31:10.353+06:00  INFO 3068 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-07-20T12:31:10.565+06:00  INFO 3068 --- [main] liquibase.command                        : Using deploymentId: 9834670374
+2023-07-20T12:31:10.578+06:00  INFO 3068 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-07-20T12:31:10.722+06:00  INFO 3068 --- [main] liquibase.changelog                      : Table events created
+2023-07-20T12:31:10.728+06:00  INFO 3068 --- [main] liquibase.changelog                      : ChangeSet db/changelog/initial/001_create_events_table.yaml::01-create-events-table::Sanat ran successfully in 35ms
+2023-07-20T12:31:10.757+06:00  INFO 3068 --- [main] liquibase.util                           : UPDATE SUMMARY
+2023-07-20T12:31:10.758+06:00  INFO 3068 --- [main] liquibase.util                           : Run:                          1
+2023-07-20T12:31:10.760+06:00  INFO 3068 --- [main] liquibase.util                           : Previously run:               0
+2023-07-20T12:31:10.762+06:00  INFO 3068 --- [main] liquibase.util                           : Filtered out:                 0
+2023-07-20T12:31:10.762+06:00  INFO 3068 --- [main] liquibase.util                           : -------------------------------
+2023-07-20T12:31:10.763+06:00  INFO 3068 --- [main] liquibase.util                           : Total change sets:            1
+
+2023-07-20T12:31:10.766+06:00  INFO 3068 --- [main] liquibase.util                           : Update summary generated
+2023-07-20T12:31:10.768+06:00  INFO 3068 --- [main] liquibase.command                        : Update command completed successfully.
+2023-07-20T12:31:10.785+06:00  INFO 3068 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-07-20T12:31:10.853+06:00  INFO 3068 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-07-20T12:31:10.855+06:00  INFO 3068 --- [main] liquibase.command                        : Command execution complete
+2023-07-20T12:31:11.125+06:00  WARN 3068 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2023-07-20T12:31:11.127+06:00  INFO 3068 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-20T12:31:11.163+06:00  INFO 3068 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-07-20T12:31:11.174+06:00  INFO 3068 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-07-20T12:31:11.208+06:00  INFO 3068 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-07-20T12:31:11.268+06:00 ERROR 3068 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8779 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8779 or configure this application to listen on another port.
+
+2023-07-20T12:32:03.813+06:00  INFO 19528 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.2 with PID 19528 (C:\Users\User\Downloads\Subcriber\demo\target\classes started by User in C:\Users\User\Downloads\Subcriber\demo)
+2023-07-20T12:32:03.825+06:00  INFO 19528 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T12:32:08.155+06:00  INFO 19528 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8778 (http)
+2023-07-20T12:32:08.183+06:00  INFO 19528 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T12:32:08.185+06:00  INFO 19528 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T12:32:08.725+06:00  INFO 19528 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T12:32:08.726+06:00  INFO 19528 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4629 ms
+2023-07-20T12:32:10.778+06:00  INFO 19528 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-20T12:32:11.166+06:00  INFO 19528 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./db/my_db user=ROOT
+2023-07-20T12:32:11.172+06:00  INFO 19528 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-20T12:32:11.497+06:00  INFO 19528 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-07-20T12:32:12.567+06:00  INFO 19528 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-07-20T12:32:13.574+06:00  INFO 19528 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-07-20T12:32:13.683+06:00  INFO 19528 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-07-20T12:32:13.699+06:00  INFO 19528 --- [main] liquibase.util                           : UPDATE SUMMARY
+2023-07-20T12:32:13.700+06:00  INFO 19528 --- [main] liquibase.util                           : Run:                          0
+2023-07-20T12:32:13.702+06:00  INFO 19528 --- [main] liquibase.util                           : Previously run:               1
+2023-07-20T12:32:13.703+06:00  INFO 19528 --- [main] liquibase.util                           : Filtered out:                 0
+2023-07-20T12:32:13.704+06:00  INFO 19528 --- [main] liquibase.util                           : -------------------------------
+2023-07-20T12:32:13.706+06:00  INFO 19528 --- [main] liquibase.util                           : Total change sets:            1
+
+2023-07-20T12:32:13.709+06:00  INFO 19528 --- [main] liquibase.util                           : Update summary generated
+2023-07-20T12:32:13.717+06:00  INFO 19528 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-07-20T12:32:13.730+06:00  INFO 19528 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-07-20T12:32:13.733+06:00  INFO 19528 --- [main] liquibase.command                        : Command execution complete
+2023-07-20T12:32:14.134+06:00  INFO 19528 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8778 (http) with context path ''
+2023-07-20T12:32:14.161+06:00  INFO 19528 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 12.63 seconds (process running for 18.411)
+2023-07-20T12:35:43.178+06:00  INFO 19528 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-20T12:35:43.201+06:00  INFO 19528 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-07-20T12:35:54.055+06:00  INFO 6136 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.2 with PID 6136 (C:\Users\User\Downloads\Subcriber\demo\target\classes started by User in C:\Users\User\Downloads\Subcriber\demo)
+2023-07-20T12:35:54.063+06:00  INFO 6136 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T12:35:57.947+06:00  INFO 6136 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8778 (http)
+2023-07-20T12:35:57.973+06:00  INFO 6136 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T12:35:57.974+06:00  INFO 6136 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T12:35:58.301+06:00  INFO 6136 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T12:35:58.302+06:00  INFO 6136 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3972 ms
+2023-07-20T12:35:59.755+06:00  INFO 6136 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-20T12:36:00.157+06:00  INFO 6136 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./db/my_db user=ROOT
+2023-07-20T12:36:00.164+06:00  INFO 6136 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-20T12:36:00.398+06:00  INFO 6136 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-07-20T12:36:01.401+06:00  INFO 6136 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-07-20T12:36:01.723+06:00  INFO 6136 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-07-20T12:36:01.725+06:00  INFO 6136 --- [main] liquibase.command                        : Command execution complete
+2023-07-20T12:36:01.737+06:00  WARN 6136 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.ChangeLogParseException: Error parsing classpath:/db/changelog/master.yaml : Could not find databaseChangeLog node
+2023-07-20T12:36:01.739+06:00  INFO 6136 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-20T12:36:01.825+06:00  INFO 6136 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-07-20T12:36:01.837+06:00  INFO 6136 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-07-20T12:36:01.872+06:00  INFO 6136 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-07-20T12:36:01.943+06:00 ERROR 6136 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.ChangeLogParseException: Error parsing classpath:/db/changelog/master.yaml : Could not find databaseChangeLog node
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:941) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.1.1.jar:3.1.1]
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10) ~[classes/:na]
+Caused by: liquibase.exception.CommandExecutionException: liquibase.exception.ChangeLogParseException: Error parsing classpath:/db/changelog/master.yaml : Could not find databaseChangeLog node
+	at liquibase.command.CommandScope.execute(CommandScope.java:236) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Liquibase.lambda$update$0(Liquibase.java:223) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:197) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.child(Scope.java:206) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.child(Scope.java:196) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.child(Scope.java:175) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Liquibase.runInScope(Liquibase.java:1361) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:215) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:197) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:329) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:284) ~[liquibase-core-4.23.0.jar:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766) ~[spring-beans-6.0.10.jar:6.0.10]
+	... 18 common frames omitted
+Caused by: liquibase.exception.ChangeLogParseException: Error parsing classpath:/db/changelog/master.yaml : Could not find databaseChangeLog node
+	at liquibase.parser.core.yaml.YamlChangeLogParser.parse(YamlChangeLogParser.java:94) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.getDatabaseChangeLog(DatabaseChangelogCommandStep.java:114) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.run(DatabaseChangelogCommandStep.java:92) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.command.CommandScope.execute(CommandScope.java:213) ~[liquibase-core-4.23.0.jar:na]
+	... 30 common frames omitted
+Caused by: liquibase.exception.SetupException: Could not find databaseChangeLog node
+	at liquibase.changelog.DatabaseChangeLog.handleChildNode(DatabaseChangeLog.java:455) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.changelog.DatabaseChangeLog.load(DatabaseChangeLog.java:378) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.parser.core.yaml.YamlChangeLogParser.parse(YamlChangeLogParser.java:88) ~[liquibase-core-4.23.0.jar:na]
+	... 33 common frames omitted
+Caused by: liquibase.exception.ChangeLogParseException: Could not find databaseChangeLog node
+	at liquibase.parser.core.yaml.YamlChangeLogParser.parse(YamlChangeLogParser.java:47) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.changelog.DatabaseChangeLog.include(DatabaseChangeLog.java:852) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.changelog.DatabaseChangeLog.handleChildNode(DatabaseChangeLog.java:445) ~[liquibase-core-4.23.0.jar:na]
+	... 35 common frames omitted
+
+2023-07-20T12:36:50.938+06:00  INFO 1852 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.2 with PID 1852 (C:\Users\User\Downloads\Subcriber\demo\target\classes started by User in C:\Users\User\Downloads\Subcriber\demo)
+2023-07-20T12:36:50.945+06:00  INFO 1852 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T12:36:54.824+06:00  INFO 1852 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8778 (http)
+2023-07-20T12:36:54.854+06:00  INFO 1852 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T12:36:54.856+06:00  INFO 1852 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T12:36:55.236+06:00  INFO 1852 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T12:36:55.238+06:00  INFO 1852 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4109 ms
+2023-07-20T12:36:56.770+06:00  INFO 1852 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-20T12:36:57.111+06:00  INFO 1852 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./db/my_db user=ROOT
+2023-07-20T12:36:57.117+06:00  INFO 1852 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-20T12:36:57.347+06:00  INFO 1852 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-07-20T12:36:58.333+06:00  INFO 1852 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-07-20T12:36:58.639+06:00  INFO 1852 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-07-20T12:36:58.642+06:00  INFO 1852 --- [main] liquibase.command                        : Command execution complete
+2023-07-20T12:36:58.650+06:00  WARN 1852 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.ChangeLogParseException: Error parsing classpath:/db/changelog/master.yaml : Could not find databaseChangeLog node
+2023-07-20T12:36:58.652+06:00  INFO 1852 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-20T12:36:58.700+06:00  INFO 1852 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-07-20T12:36:58.758+06:00  INFO 1852 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-07-20T12:36:58.794+06:00  INFO 1852 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-07-20T12:36:58.875+06:00 ERROR 1852 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.ChangeLogParseException: Error parsing classpath:/db/changelog/master.yaml : Could not find databaseChangeLog node
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:941) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.1.1.jar:3.1.1]
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10) ~[classes/:na]
+Caused by: liquibase.exception.CommandExecutionException: liquibase.exception.ChangeLogParseException: Error parsing classpath:/db/changelog/master.yaml : Could not find databaseChangeLog node
+	at liquibase.command.CommandScope.execute(CommandScope.java:236) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Liquibase.lambda$update$0(Liquibase.java:223) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:197) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.child(Scope.java:206) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.child(Scope.java:196) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.child(Scope.java:175) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Liquibase.runInScope(Liquibase.java:1361) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:215) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:197) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:329) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:284) ~[liquibase-core-4.23.0.jar:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766) ~[spring-beans-6.0.10.jar:6.0.10]
+	... 18 common frames omitted
+Caused by: liquibase.exception.ChangeLogParseException: Error parsing classpath:/db/changelog/master.yaml : Could not find databaseChangeLog node
+	at liquibase.parser.core.yaml.YamlChangeLogParser.parse(YamlChangeLogParser.java:94) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.getDatabaseChangeLog(DatabaseChangelogCommandStep.java:114) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.run(DatabaseChangelogCommandStep.java:92) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.command.CommandScope.execute(CommandScope.java:213) ~[liquibase-core-4.23.0.jar:na]
+	... 30 common frames omitted
+Caused by: liquibase.exception.SetupException: Could not find databaseChangeLog node
+	at liquibase.changelog.DatabaseChangeLog.handleChildNode(DatabaseChangeLog.java:455) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.changelog.DatabaseChangeLog.load(DatabaseChangeLog.java:378) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.parser.core.yaml.YamlChangeLogParser.parse(YamlChangeLogParser.java:88) ~[liquibase-core-4.23.0.jar:na]
+	... 33 common frames omitted
+Caused by: liquibase.exception.ChangeLogParseException: Could not find databaseChangeLog node
+	at liquibase.parser.core.yaml.YamlChangeLogParser.parse(YamlChangeLogParser.java:47) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.changelog.DatabaseChangeLog.include(DatabaseChangeLog.java:852) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.changelog.DatabaseChangeLog.handleChildNode(DatabaseChangeLog.java:445) ~[liquibase-core-4.23.0.jar:na]
+	... 35 common frames omitted
+
+2023-07-20T12:38:27.632+06:00  INFO 9752 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.2 with PID 9752 (C:\Users\User\Downloads\Subcriber\demo\target\classes started by User in C:\Users\User\Downloads\Subcriber\demo)
+2023-07-20T12:38:27.646+06:00  INFO 9752 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T12:38:31.859+06:00  INFO 9752 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8778 (http)
+2023-07-20T12:38:31.890+06:00  INFO 9752 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T12:38:31.893+06:00  INFO 9752 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T12:38:32.278+06:00  INFO 9752 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T12:38:32.280+06:00  INFO 9752 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4214 ms
+2023-07-20T12:38:33.794+06:00  INFO 9752 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-20T12:38:34.132+06:00  INFO 9752 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./db/my_db user=ROOT
+2023-07-20T12:38:34.137+06:00  INFO 9752 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-20T12:38:34.391+06:00  INFO 9752 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-07-20T12:38:35.387+06:00  INFO 9752 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-07-20T12:38:36.407+06:00  INFO 9752 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-07-20T12:38:36.559+06:00  INFO 9752 --- [main] liquibase.command                        : Using deploymentId: 9835116421
+2023-07-20T12:38:36.567+06:00  INFO 9752 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-07-20T12:38:36.789+06:00  INFO 9752 --- [main] liquibase.changelog                      : Table events created
+2023-07-20T12:38:36.800+06:00  INFO 9752 --- [main] liquibase.changelog                      : ChangeSet db/changelog/initial/001_create_events_table.yaml::01-create-events-table::Sanat ran successfully in 123ms
+2023-07-20T12:38:36.832+06:00  INFO 9752 --- [main] liquibase.util                           : UPDATE SUMMARY
+2023-07-20T12:38:36.833+06:00  INFO 9752 --- [main] liquibase.util                           : Run:                          1
+2023-07-20T12:38:36.835+06:00  INFO 9752 --- [main] liquibase.util                           : Previously run:               0
+2023-07-20T12:38:36.836+06:00  INFO 9752 --- [main] liquibase.util                           : Filtered out:                 0
+2023-07-20T12:38:36.837+06:00  INFO 9752 --- [main] liquibase.util                           : -------------------------------
+2023-07-20T12:38:36.838+06:00  INFO 9752 --- [main] liquibase.util                           : Total change sets:            1
+
+2023-07-20T12:38:36.841+06:00  INFO 9752 --- [main] liquibase.util                           : Update summary generated
+2023-07-20T12:38:36.842+06:00  INFO 9752 --- [main] liquibase.command                        : Update command completed successfully.
+2023-07-20T12:38:36.853+06:00  INFO 9752 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-07-20T12:38:36.865+06:00  INFO 9752 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-07-20T12:38:36.867+06:00  INFO 9752 --- [main] liquibase.command                        : Command execution complete
+2023-07-20T12:38:37.136+06:00  INFO 9752 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8778 (http) with context path ''
+2023-07-20T12:38:37.162+06:00  INFO 9752 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 11.576 seconds (process running for 13.823)
+2023-07-20T12:45:15.177+06:00  INFO 9752 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-20T12:45:15.203+06:00  INFO 9752 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-07-20T12:45:23.946+06:00  INFO 17720 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.2 with PID 17720 (C:\Users\User\Downloads\Subcriber\demo\target\classes started by User in C:\Users\User\Downloads\Subcriber\demo)
+2023-07-20T12:45:23.953+06:00  INFO 17720 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T12:45:27.787+06:00  INFO 17720 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8778 (http)
+2023-07-20T12:45:27.820+06:00  INFO 17720 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T12:45:27.822+06:00  INFO 17720 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T12:45:28.170+06:00  INFO 17720 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T12:45:28.172+06:00  INFO 17720 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4049 ms
+2023-07-20T12:45:29.969+06:00  INFO 17720 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-20T12:45:30.829+06:00  INFO 17720 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./db/my_db user=ROOT
+2023-07-20T12:45:30.835+06:00  INFO 17720 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-20T12:45:31.755+06:00  INFO 17720 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-07-20T12:45:32.739+06:00  INFO 17720 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-07-20T12:45:33.722+06:00  INFO 17720 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-07-20T12:45:33.924+06:00  INFO 17720 --- [main] liquibase.command                        : Using deploymentId: 9835533737
+2023-07-20T12:45:33.939+06:00  INFO 17720 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-07-20T12:45:34.053+06:00 ERROR 17720 --- [main] liquibase.changelog                      : ChangeSet db/changelog/initial/001_create_events_table.yaml::01-create-events-table::Sanat encountered an exception.
+2023-07-20T12:45:34.060+06:00  INFO 17720 --- [main] liquibase.command                        : Update command encountered an exception.
+2023-07-20T12:45:34.070+06:00  INFO 17720 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-07-20T12:45:34.077+06:00  INFO 17720 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-07-20T12:45:34.082+06:00  INFO 17720 --- [main] liquibase.command                        : Command execution complete
+2023-07-20T12:45:34.085+06:00  WARN 17720 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset db/changelog/initial/001_create_events_table.yaml::01-create-events-table::Sanat:
+     Reason: liquibase.exception.DatabaseException: Unknown data type: "DATEANDTIME"; SQL statement:
+CREATE TABLE PUBLIC.events (id INT GENERATED BY DEFAULT AS IDENTITY NOT NULL, dateTime DATEANDTIME, name VARCHAR(255), description VARCHAR(255), CONSTRAINT PK_EVENTS PRIMARY KEY (id)) [50004-214] [Failed SQL: (50004) CREATE TABLE PUBLIC.events (id INT GENERATED BY DEFAULT AS IDENTITY NOT NULL, dateTime DATEANDTIME, name VARCHAR(255), description VARCHAR(255), CONSTRAINT PK_EVENTS PRIMARY KEY (id))]
+2023-07-20T12:45:34.086+06:00  INFO 17720 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-20T12:45:34.199+06:00  INFO 17720 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-07-20T12:45:34.217+06:00  INFO 17720 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-07-20T12:45:34.277+06:00  INFO 17720 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-07-20T12:45:34.352+06:00 ERROR 17720 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset db/changelog/initial/001_create_events_table.yaml::01-create-events-table::Sanat:
+     Reason: liquibase.exception.DatabaseException: Unknown data type: "DATEANDTIME"; SQL statement:
+CREATE TABLE PUBLIC.events (id INT GENERATED BY DEFAULT AS IDENTITY NOT NULL, dateTime DATEANDTIME, name VARCHAR(255), description VARCHAR(255), CONSTRAINT PK_EVENTS PRIMARY KEY (id)) [50004-214] [Failed SQL: (50004) CREATE TABLE PUBLIC.events (id INT GENERATED BY DEFAULT AS IDENTITY NOT NULL, dateTime DATEANDTIME, name VARCHAR(255), description VARCHAR(255), CONSTRAINT PK_EVENTS PRIMARY KEY (id))]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:941) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.1.1.jar:3.1.1]
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10) ~[classes/:na]
+Caused by: liquibase.exception.CommandExecutionException: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset db/changelog/initial/001_create_events_table.yaml::01-create-events-table::Sanat:
+     Reason: liquibase.exception.DatabaseException: Unknown data type: "DATEANDTIME"; SQL statement:
+CREATE TABLE PUBLIC.events (id INT GENERATED BY DEFAULT AS IDENTITY NOT NULL, dateTime DATEANDTIME, name VARCHAR(255), description VARCHAR(255), CONSTRAINT PK_EVENTS PRIMARY KEY (id)) [50004-214] [Failed SQL: (50004) CREATE TABLE PUBLIC.events (id INT GENERATED BY DEFAULT AS IDENTITY NOT NULL, dateTime DATEANDTIME, name VARCHAR(255), description VARCHAR(255), CONSTRAINT PK_EVENTS PRIMARY KEY (id))]
+	at liquibase.command.CommandScope.execute(CommandScope.java:236) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Liquibase.lambda$update$0(Liquibase.java:223) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:197) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.child(Scope.java:206) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.child(Scope.java:196) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.child(Scope.java:175) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Liquibase.runInScope(Liquibase.java:1361) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:215) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:197) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:329) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:284) ~[liquibase-core-4.23.0.jar:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766) ~[spring-beans-6.0.10.jar:6.0.10]
+	... 18 common frames omitted
+Caused by: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset db/changelog/initial/001_create_events_table.yaml::01-create-events-table::Sanat:
+     Reason: liquibase.exception.DatabaseException: Unknown data type: "DATEANDTIME"; SQL statement:
+CREATE TABLE PUBLIC.events (id INT GENERATED BY DEFAULT AS IDENTITY NOT NULL, dateTime DATEANDTIME, name VARCHAR(255), description VARCHAR(255), CONSTRAINT PK_EVENTS PRIMARY KEY (id)) [50004-214] [Failed SQL: (50004) CREATE TABLE PUBLIC.events (id INT GENERATED BY DEFAULT AS IDENTITY NOT NULL, dateTime DATEANDTIME, name VARCHAR(255), description VARCHAR(255), CONSTRAINT PK_EVENTS PRIMARY KEY (id))]
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:122) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.command.core.AbstractUpdateCommandStep.lambda$run$0(AbstractUpdateCommandStep.java:74) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:197) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.child(Scope.java:206) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.child(Scope.java:196) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.child(Scope.java:175) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.command.core.AbstractUpdateCommandStep.run(AbstractUpdateCommandStep.java:73) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.command.CommandScope.execute(CommandScope.java:213) ~[liquibase-core-4.23.0.jar:na]
+	... 30 common frames omitted
+Caused by: liquibase.exception.MigrationFailedException: Migration failed for changeset db/changelog/initial/001_create_events_table.yaml::01-create-events-table::Sanat:
+     Reason: liquibase.exception.DatabaseException: Unknown data type: "DATEANDTIME"; SQL statement:
+CREATE TABLE PUBLIC.events (id INT GENERATED BY DEFAULT AS IDENTITY NOT NULL, dateTime DATEANDTIME, name VARCHAR(255), description VARCHAR(255), CONSTRAINT PK_EVENTS PRIMARY KEY (id)) [50004-214] [Failed SQL: (50004) CREATE TABLE PUBLIC.events (id INT GENERATED BY DEFAULT AS IDENTITY NOT NULL, dateTime DATEANDTIME, name VARCHAR(255), description VARCHAR(255), CONSTRAINT PK_EVENTS PRIMARY KEY (id))]
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:765) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.changelog.visitor.UpdateVisitor.executeAcceptedChange(UpdateVisitor.java:121) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.changelog.visitor.UpdateVisitor.visit(UpdateVisitor.java:70) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.changelog.ChangeLogIterator$2.lambda$run$0(ChangeLogIterator.java:110) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:197) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.child(Scope.java:206) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.child(Scope.java:196) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.child(Scope.java:175) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.child(Scope.java:263) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.changelog.ChangeLogIterator$2.run(ChangeLogIterator.java:100) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:197) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.child(Scope.java:206) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.child(Scope.java:196) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.child(Scope.java:175) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.child(Scope.java:263) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.child(Scope.java:267) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:74) ~[liquibase-core-4.23.0.jar:na]
+	... 37 common frames omitted
+Caused by: liquibase.exception.DatabaseException: Unknown data type: "DATEANDTIME"; SQL statement:
+CREATE TABLE PUBLIC.events (id INT GENERATED BY DEFAULT AS IDENTITY NOT NULL, dateTime DATEANDTIME, name VARCHAR(255), description VARCHAR(255), CONSTRAINT PK_EVENTS PRIMARY KEY (id)) [50004-214] [Failed SQL: (50004) CREATE TABLE PUBLIC.events (id INT GENERATED BY DEFAULT AS IDENTITY NOT NULL, dateTime DATEANDTIME, name VARCHAR(255), description VARCHAR(255), CONSTRAINT PK_EVENTS PRIMARY KEY (id))]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:464) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:76) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:179) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.database.AbstractJdbcDatabase.execute(AbstractJdbcDatabase.java:1291) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.database.AbstractJdbcDatabase.executeStatements(AbstractJdbcDatabase.java:1273) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:725) ~[liquibase-core-4.23.0.jar:na]
+	... 53 common frames omitted
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Unknown data type: "DATEANDTIME"; SQL statement:
+CREATE TABLE PUBLIC.events (id INT GENERATED BY DEFAULT AS IDENTITY NOT NULL, dateTime DATEANDTIME, name VARCHAR(255), description VARCHAR(255), CONSTRAINT PK_EVENTS PRIMARY KEY (id)) [50004-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:554) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionRemote.readException(SessionRemote.java:637) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionRemote.done(SessionRemote.java:606) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.CommandRemote.prepare(CommandRemote.java:78) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.CommandRemote.<init>(CommandRemote.java:50) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionRemote.prepareCommand(SessionRemote.java:480) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:237) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223) ~[h2-2.1.214.jar:2.1.214]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-5.0.1.jar:na]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:460) ~[liquibase-core-4.23.0.jar:na]
+	... 58 common frames omitted
+
+2023-07-20T12:46:08.968+06:00  INFO 14912 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.2 with PID 14912 (C:\Users\User\Downloads\Subcriber\demo\target\classes started by User in C:\Users\User\Downloads\Subcriber\demo)
+2023-07-20T12:46:09.000+06:00  INFO 14912 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T12:46:15.783+06:00  INFO 14912 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8778 (http)
+2023-07-20T12:46:15.827+06:00  INFO 14912 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T12:46:15.830+06:00  INFO 14912 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T12:46:16.461+06:00  INFO 14912 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T12:46:16.507+06:00  INFO 14912 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6999 ms
+2023-07-20T12:46:18.089+06:00  INFO 14912 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-20T12:46:18.544+06:00  INFO 14912 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./db/my_db user=ROOT
+2023-07-20T12:46:18.555+06:00  INFO 14912 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-20T12:46:18.825+06:00  INFO 14912 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-07-20T12:46:19.912+06:00  INFO 14912 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-07-20T12:46:22.869+06:00  INFO 14912 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-07-20T12:46:23.034+06:00  INFO 14912 --- [main] liquibase.command                        : Using deploymentId: 9835582881
+2023-07-20T12:46:23.041+06:00  INFO 14912 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-07-20T12:46:23.182+06:00 ERROR 14912 --- [main] liquibase.changelog                      : ChangeSet db/changelog/initial/001_create_events_table.yaml::01-create-events-table::Sanat encountered an exception.
+2023-07-20T12:46:23.190+06:00  INFO 14912 --- [main] liquibase.command                        : Update command encountered an exception.
+2023-07-20T12:46:23.209+06:00  INFO 14912 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-07-20T12:46:23.219+06:00  INFO 14912 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-07-20T12:46:23.226+06:00  INFO 14912 --- [main] liquibase.command                        : Command execution complete
+2023-07-20T12:46:23.230+06:00  WARN 14912 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset db/changelog/initial/001_create_events_table.yaml::01-create-events-table::Sanat:
+     Reason: liquibase.exception.DatabaseException: Unknown data type: "DATEANDTIME"; SQL statement:
+CREATE TABLE PUBLIC.events (id INT GENERATED BY DEFAULT AS IDENTITY NOT NULL, dateTime DATEANDTIME, name VARCHAR(255), description VARCHAR(255), CONSTRAINT PK_EVENTS PRIMARY KEY (id)) [50004-214] [Failed SQL: (50004) CREATE TABLE PUBLIC.events (id INT GENERATED BY DEFAULT AS IDENTITY NOT NULL, dateTime DATEANDTIME, name VARCHAR(255), description VARCHAR(255), CONSTRAINT PK_EVENTS PRIMARY KEY (id))]
+2023-07-20T12:46:23.231+06:00  INFO 14912 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-20T12:46:23.295+06:00  INFO 14912 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-07-20T12:46:23.306+06:00  INFO 14912 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-07-20T12:46:23.339+06:00  INFO 14912 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-07-20T12:46:23.470+06:00 ERROR 14912 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset db/changelog/initial/001_create_events_table.yaml::01-create-events-table::Sanat:
+     Reason: liquibase.exception.DatabaseException: Unknown data type: "DATEANDTIME"; SQL statement:
+CREATE TABLE PUBLIC.events (id INT GENERATED BY DEFAULT AS IDENTITY NOT NULL, dateTime DATEANDTIME, name VARCHAR(255), description VARCHAR(255), CONSTRAINT PK_EVENTS PRIMARY KEY (id)) [50004-214] [Failed SQL: (50004) CREATE TABLE PUBLIC.events (id INT GENERATED BY DEFAULT AS IDENTITY NOT NULL, dateTime DATEANDTIME, name VARCHAR(255), description VARCHAR(255), CONSTRAINT PK_EVENTS PRIMARY KEY (id))]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:941) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.1.1.jar:3.1.1]
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10) ~[classes/:na]
+Caused by: liquibase.exception.CommandExecutionException: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset db/changelog/initial/001_create_events_table.yaml::01-create-events-table::Sanat:
+     Reason: liquibase.exception.DatabaseException: Unknown data type: "DATEANDTIME"; SQL statement:
+CREATE TABLE PUBLIC.events (id INT GENERATED BY DEFAULT AS IDENTITY NOT NULL, dateTime DATEANDTIME, name VARCHAR(255), description VARCHAR(255), CONSTRAINT PK_EVENTS PRIMARY KEY (id)) [50004-214] [Failed SQL: (50004) CREATE TABLE PUBLIC.events (id INT GENERATED BY DEFAULT AS IDENTITY NOT NULL, dateTime DATEANDTIME, name VARCHAR(255), description VARCHAR(255), CONSTRAINT PK_EVENTS PRIMARY KEY (id))]
+	at liquibase.command.CommandScope.execute(CommandScope.java:236) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Liquibase.lambda$update$0(Liquibase.java:223) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:197) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.child(Scope.java:206) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.child(Scope.java:196) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.child(Scope.java:175) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Liquibase.runInScope(Liquibase.java:1361) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:215) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:197) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:329) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:284) ~[liquibase-core-4.23.0.jar:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766) ~[spring-beans-6.0.10.jar:6.0.10]
+	... 18 common frames omitted
+Caused by: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset db/changelog/initial/001_create_events_table.yaml::01-create-events-table::Sanat:
+     Reason: liquibase.exception.DatabaseException: Unknown data type: "DATEANDTIME"; SQL statement:
+CREATE TABLE PUBLIC.events (id INT GENERATED BY DEFAULT AS IDENTITY NOT NULL, dateTime DATEANDTIME, name VARCHAR(255), description VARCHAR(255), CONSTRAINT PK_EVENTS PRIMARY KEY (id)) [50004-214] [Failed SQL: (50004) CREATE TABLE PUBLIC.events (id INT GENERATED BY DEFAULT AS IDENTITY NOT NULL, dateTime DATEANDTIME, name VARCHAR(255), description VARCHAR(255), CONSTRAINT PK_EVENTS PRIMARY KEY (id))]
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:122) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.command.core.AbstractUpdateCommandStep.lambda$run$0(AbstractUpdateCommandStep.java:74) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:197) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.child(Scope.java:206) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.child(Scope.java:196) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.child(Scope.java:175) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.command.core.AbstractUpdateCommandStep.run(AbstractUpdateCommandStep.java:73) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.command.CommandScope.execute(CommandScope.java:213) ~[liquibase-core-4.23.0.jar:na]
+	... 30 common frames omitted
+Caused by: liquibase.exception.MigrationFailedException: Migration failed for changeset db/changelog/initial/001_create_events_table.yaml::01-create-events-table::Sanat:
+     Reason: liquibase.exception.DatabaseException: Unknown data type: "DATEANDTIME"; SQL statement:
+CREATE TABLE PUBLIC.events (id INT GENERATED BY DEFAULT AS IDENTITY NOT NULL, dateTime DATEANDTIME, name VARCHAR(255), description VARCHAR(255), CONSTRAINT PK_EVENTS PRIMARY KEY (id)) [50004-214] [Failed SQL: (50004) CREATE TABLE PUBLIC.events (id INT GENERATED BY DEFAULT AS IDENTITY NOT NULL, dateTime DATEANDTIME, name VARCHAR(255), description VARCHAR(255), CONSTRAINT PK_EVENTS PRIMARY KEY (id))]
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:765) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.changelog.visitor.UpdateVisitor.executeAcceptedChange(UpdateVisitor.java:121) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.changelog.visitor.UpdateVisitor.visit(UpdateVisitor.java:70) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.changelog.ChangeLogIterator$2.lambda$run$0(ChangeLogIterator.java:110) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:197) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.child(Scope.java:206) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.child(Scope.java:196) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.child(Scope.java:175) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.child(Scope.java:263) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.changelog.ChangeLogIterator$2.run(ChangeLogIterator.java:100) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:197) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.child(Scope.java:206) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.child(Scope.java:196) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.child(Scope.java:175) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.child(Scope.java:263) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.child(Scope.java:267) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:74) ~[liquibase-core-4.23.0.jar:na]
+	... 37 common frames omitted
+Caused by: liquibase.exception.DatabaseException: Unknown data type: "DATEANDTIME"; SQL statement:
+CREATE TABLE PUBLIC.events (id INT GENERATED BY DEFAULT AS IDENTITY NOT NULL, dateTime DATEANDTIME, name VARCHAR(255), description VARCHAR(255), CONSTRAINT PK_EVENTS PRIMARY KEY (id)) [50004-214] [Failed SQL: (50004) CREATE TABLE PUBLIC.events (id INT GENERATED BY DEFAULT AS IDENTITY NOT NULL, dateTime DATEANDTIME, name VARCHAR(255), description VARCHAR(255), CONSTRAINT PK_EVENTS PRIMARY KEY (id))]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:464) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:76) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:179) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.database.AbstractJdbcDatabase.execute(AbstractJdbcDatabase.java:1291) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.database.AbstractJdbcDatabase.executeStatements(AbstractJdbcDatabase.java:1273) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:725) ~[liquibase-core-4.23.0.jar:na]
+	... 53 common frames omitted
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Unknown data type: "DATEANDTIME"; SQL statement:
+CREATE TABLE PUBLIC.events (id INT GENERATED BY DEFAULT AS IDENTITY NOT NULL, dateTime DATEANDTIME, name VARCHAR(255), description VARCHAR(255), CONSTRAINT PK_EVENTS PRIMARY KEY (id)) [50004-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:554) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionRemote.readException(SessionRemote.java:637) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionRemote.done(SessionRemote.java:606) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.CommandRemote.prepare(CommandRemote.java:78) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.CommandRemote.<init>(CommandRemote.java:50) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionRemote.prepareCommand(SessionRemote.java:480) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:237) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223) ~[h2-2.1.214.jar:2.1.214]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-5.0.1.jar:na]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:460) ~[liquibase-core-4.23.0.jar:na]
+	... 58 common frames omitted
+
+2023-07-20T12:47:08.414+06:00  INFO 16528 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.2 with PID 16528 (C:\Users\User\Downloads\Subcriber\demo\target\classes started by User in C:\Users\User\Downloads\Subcriber\demo)
+2023-07-20T12:47:08.423+06:00  INFO 16528 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T12:47:12.364+06:00  INFO 16528 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8778 (http)
+2023-07-20T12:47:12.404+06:00  INFO 16528 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T12:47:12.406+06:00  INFO 16528 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T12:47:12.761+06:00  INFO 16528 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T12:47:12.762+06:00  INFO 16528 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4171 ms
+2023-07-20T12:47:14.299+06:00  INFO 16528 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-20T12:47:14.680+06:00  INFO 16528 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./db/my_db user=ROOT
+2023-07-20T12:47:14.686+06:00  INFO 16528 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-20T12:47:14.922+06:00  INFO 16528 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-07-20T12:47:15.935+06:00  INFO 16528 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-07-20T12:47:16.983+06:00  INFO 16528 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-07-20T12:47:17.112+06:00  INFO 16528 --- [main] liquibase.command                        : Using deploymentId: 9835636996
+2023-07-20T12:47:17.118+06:00  INFO 16528 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-07-20T12:47:17.217+06:00  INFO 16528 --- [main] liquibase.changelog                      : Table events created
+2023-07-20T12:47:17.225+06:00  INFO 16528 --- [main] liquibase.changelog                      : ChangeSet db/changelog/initial/001_create_events_table.yaml::01-create-events-table::Sanat ran successfully in 51ms
+2023-07-20T12:47:17.263+06:00  INFO 16528 --- [main] liquibase.util                           : UPDATE SUMMARY
+2023-07-20T12:47:17.264+06:00  INFO 16528 --- [main] liquibase.util                           : Run:                          1
+2023-07-20T12:47:17.267+06:00  INFO 16528 --- [main] liquibase.util                           : Previously run:               0
+2023-07-20T12:47:17.268+06:00  INFO 16528 --- [main] liquibase.util                           : Filtered out:                 0
+2023-07-20T12:47:17.269+06:00  INFO 16528 --- [main] liquibase.util                           : -------------------------------
+2023-07-20T12:47:17.270+06:00  INFO 16528 --- [main] liquibase.util                           : Total change sets:            1
+
+2023-07-20T12:47:17.272+06:00  INFO 16528 --- [main] liquibase.util                           : Update summary generated
+2023-07-20T12:47:17.274+06:00  INFO 16528 --- [main] liquibase.command                        : Update command completed successfully.
+2023-07-20T12:47:17.366+06:00  INFO 16528 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-07-20T12:47:17.390+06:00  INFO 16528 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-07-20T12:47:17.391+06:00  INFO 16528 --- [main] liquibase.command                        : Command execution complete
+2023-07-20T12:47:17.662+06:00  INFO 16528 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8778 (http) with context path ''
+2023-07-20T12:47:17.689+06:00  INFO 16528 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 11.149 seconds (process running for 13.402)
+2023-07-20T12:53:14.488+06:00  INFO 16528 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-20T12:53:14.661+06:00  INFO 16528 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-07-20T12:53:27.995+06:00  INFO 5860 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.2 with PID 5860 (C:\Users\User\Downloads\Subcriber\demo\target\classes started by User in C:\Users\User\Downloads\Subcriber\demo)
+2023-07-20T12:53:28.005+06:00  INFO 5860 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T12:53:32.116+06:00  INFO 5860 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8778 (http)
+2023-07-20T12:53:32.330+06:00  INFO 5860 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T12:53:32.334+06:00  INFO 5860 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T12:53:32.823+06:00  INFO 5860 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T12:53:32.824+06:00  INFO 5860 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4565 ms
+2023-07-20T12:53:34.849+06:00  INFO 5860 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-20T12:53:35.232+06:00  INFO 5860 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./db/my_db user=ROOT
+2023-07-20T12:53:35.238+06:00  INFO 5860 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-20T12:53:35.427+06:00  INFO 5860 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-07-20T12:53:36.410+06:00  INFO 5860 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-07-20T12:53:37.590+06:00  INFO 5860 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-07-20T12:53:37.853+06:00  INFO 5860 --- [main] liquibase.command                        : Using deploymentId: 9836017609
+2023-07-20T12:53:37.860+06:00  INFO 5860 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-07-20T12:53:38.018+06:00  INFO 5860 --- [main] liquibase.changelog                      : New row inserted into events
+2023-07-20T12:53:38.033+06:00  INFO 5860 --- [main] liquibase.changelog                      : New row inserted into events
+2023-07-20T12:53:38.041+06:00  INFO 5860 --- [main] liquibase.changelog                      : New row inserted into events
+2023-07-20T12:53:38.043+06:00  INFO 5860 --- [main] liquibase.changelog                      : ChangeSet db/changelog/initial/002_insert_events.yaml::01-insert-initial-data::Sanat ran successfully in 70ms
+2023-07-20T12:53:38.125+06:00  INFO 5860 --- [main] liquibase.util                           : UPDATE SUMMARY
+2023-07-20T12:53:38.127+06:00  INFO 5860 --- [main] liquibase.util                           : Run:                          1
+2023-07-20T12:53:38.128+06:00  INFO 5860 --- [main] liquibase.util                           : Previously run:               1
+2023-07-20T12:53:38.131+06:00  INFO 5860 --- [main] liquibase.util                           : Filtered out:                 0
+2023-07-20T12:53:38.132+06:00  INFO 5860 --- [main] liquibase.util                           : -------------------------------
+2023-07-20T12:53:38.133+06:00  INFO 5860 --- [main] liquibase.util                           : Total change sets:            2
+
+2023-07-20T12:53:38.136+06:00  INFO 5860 --- [main] liquibase.util                           : Update summary generated
+2023-07-20T12:53:38.141+06:00  INFO 5860 --- [main] liquibase.command                        : Update command completed successfully.
+2023-07-20T12:53:38.160+06:00  INFO 5860 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-07-20T12:53:38.225+06:00  INFO 5860 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-07-20T12:53:38.227+06:00  INFO 5860 --- [main] liquibase.command                        : Command execution complete
+2023-07-20T12:53:38.510+06:00  INFO 5860 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8778 (http) with context path ''
+2023-07-20T12:53:38.535+06:00  INFO 5860 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 12.276 seconds (process running for 14.628)
+2023-07-20T13:05:58.623+06:00  INFO 5860 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-20T13:05:58.649+06:00  INFO 5860 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-07-20T13:06:09.897+06:00  INFO 18536 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.2 with PID 18536 (C:\Users\User\Downloads\Subcriber\demo\target\classes started by User in C:\Users\User\Downloads\Subcriber\demo)
+2023-07-20T13:06:09.909+06:00  INFO 18536 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T13:06:13.796+06:00  INFO 18536 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8778 (http)
+2023-07-20T13:06:13.825+06:00  INFO 18536 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T13:06:13.826+06:00  INFO 18536 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T13:06:14.218+06:00  INFO 18536 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T13:06:14.219+06:00  INFO 18536 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4047 ms
+2023-07-20T13:06:15.753+06:00  INFO 18536 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-20T13:06:16.154+06:00  INFO 18536 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./db/my_db user=ROOT
+2023-07-20T13:06:16.161+06:00  INFO 18536 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-20T13:06:16.337+06:00  INFO 18536 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-07-20T13:06:17.317+06:00  INFO 18536 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-07-20T13:06:18.333+06:00  INFO 18536 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-07-20T13:06:18.335+06:00  INFO 18536 --- [main] liquibase.command                        : Command execution complete
+2023-07-20T13:06:18.340+06:00  WARN 18536 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.ChangeLogParseException: Error parsing classpath:/db/changelog/master.yaml : The file db/changelog/initial/003_create_event_subscribers.yaml was not found in the configured search path:
+    - Spring classpath
+More locations can be added with the 'searchPath' parameter.
+2023-07-20T13:06:18.341+06:00  INFO 18536 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-20T13:06:18.371+06:00  INFO 18536 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-07-20T13:06:18.379+06:00  INFO 18536 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-07-20T13:06:18.404+06:00  INFO 18536 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-07-20T13:06:18.457+06:00 ERROR 18536 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.ChangeLogParseException: Error parsing classpath:/db/changelog/master.yaml : The file db/changelog/initial/003_create_event_subscribers.yaml was not found in the configured search path:
+    - Spring classpath
+More locations can be added with the 'searchPath' parameter.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:941) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.1.1.jar:3.1.1]
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10) ~[classes/:na]
+Caused by: liquibase.exception.CommandExecutionException: liquibase.exception.ChangeLogParseException: Error parsing classpath:/db/changelog/master.yaml : The file db/changelog/initial/003_create_event_subscribers.yaml was not found in the configured search path:
+    - Spring classpath
+More locations can be added with the 'searchPath' parameter.
+	at liquibase.command.CommandScope.execute(CommandScope.java:236) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Liquibase.lambda$update$0(Liquibase.java:223) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:197) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.child(Scope.java:206) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.child(Scope.java:196) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Scope.child(Scope.java:175) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Liquibase.runInScope(Liquibase.java:1361) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:215) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:197) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:329) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:284) ~[liquibase-core-4.23.0.jar:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766) ~[spring-beans-6.0.10.jar:6.0.10]
+	... 18 common frames omitted
+Caused by: liquibase.exception.ChangeLogParseException: Error parsing classpath:/db/changelog/master.yaml : The file db/changelog/initial/003_create_event_subscribers.yaml was not found in the configured search path:
+    - Spring classpath
+More locations can be added with the 'searchPath' parameter.
+	at liquibase.parser.core.yaml.YamlChangeLogParser.parse(YamlChangeLogParser.java:94) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.getDatabaseChangeLog(DatabaseChangelogCommandStep.java:114) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.run(DatabaseChangelogCommandStep.java:92) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.command.CommandScope.execute(CommandScope.java:213) ~[liquibase-core-4.23.0.jar:na]
+	... 30 common frames omitted
+Caused by: liquibase.exception.SetupException: The file db/changelog/initial/003_create_event_subscribers.yaml was not found in the configured search path:
+    - Spring classpath
+More locations can be added with the 'searchPath' parameter.
+	at liquibase.changelog.DatabaseChangeLog.handleChildNode(DatabaseChangeLog.java:455) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.changelog.DatabaseChangeLog.load(DatabaseChangeLog.java:378) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.parser.core.yaml.YamlChangeLogParser.parse(YamlChangeLogParser.java:88) ~[liquibase-core-4.23.0.jar:na]
+	... 33 common frames omitted
+Caused by: liquibase.exception.ChangeLogParseException: The file db/changelog/initial/003_create_event_subscribers.yaml was not found in the configured search path:
+    - Spring classpath
+More locations can be added with the 'searchPath' parameter.
+	at liquibase.changelog.DatabaseChangeLog.include(DatabaseChangeLog.java:848) ~[liquibase-core-4.23.0.jar:na]
+	at liquibase.changelog.DatabaseChangeLog.handleChildNode(DatabaseChangeLog.java:445) ~[liquibase-core-4.23.0.jar:na]
+	... 35 common frames omitted
+
+2023-07-20T13:08:17.327+06:00  INFO 13060 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.2 with PID 13060 (C:\Users\User\Downloads\Subcriber\demo\target\classes started by User in C:\Users\User\Downloads\Subcriber\demo)
+2023-07-20T13:08:17.338+06:00  INFO 13060 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T13:08:22.857+06:00  INFO 13060 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8778 (http)
+2023-07-20T13:08:22.945+06:00  INFO 13060 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T13:08:22.946+06:00  INFO 13060 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T13:08:23.270+06:00  INFO 13060 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T13:08:23.271+06:00  INFO 13060 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5545 ms
+2023-07-20T13:08:24.866+06:00  INFO 13060 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-20T13:08:25.284+06:00  INFO 13060 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./db/my_db user=ROOT
+2023-07-20T13:08:25.292+06:00  INFO 13060 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-20T13:08:25.550+06:00  INFO 13060 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-07-20T13:08:26.616+06:00  INFO 13060 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-07-20T13:08:27.776+06:00  INFO 13060 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-07-20T13:08:28.067+06:00  INFO 13060 --- [main] liquibase.command                        : Using deploymentId: 9836907795
+2023-07-20T13:08:28.073+06:00  INFO 13060 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-07-20T13:08:28.363+06:00  INFO 13060 --- [main] liquibase.changelog                      : Table event_subscribers created
+2023-07-20T13:08:28.374+06:00  INFO 13060 --- [main] liquibase.changelog                      : ChangeSet db/changelog/initial/003_create_event_subscribers_table.yaml::03-create-event-subscriber-table::Sanat ran successfully in 222ms
+2023-07-20T13:08:28.426+06:00  INFO 13060 --- [main] liquibase.util                           : UPDATE SUMMARY
+2023-07-20T13:08:28.427+06:00  INFO 13060 --- [main] liquibase.util                           : Run:                          1
+2023-07-20T13:08:28.429+06:00  INFO 13060 --- [main] liquibase.util                           : Previously run:               2
+2023-07-20T13:08:28.430+06:00  INFO 13060 --- [main] liquibase.util                           : Filtered out:                 0
+2023-07-20T13:08:28.431+06:00  INFO 13060 --- [main] liquibase.util                           : -------------------------------
+2023-07-20T13:08:28.432+06:00  INFO 13060 --- [main] liquibase.util                           : Total change sets:            3
+
+2023-07-20T13:08:28.436+06:00  INFO 13060 --- [main] liquibase.util                           : Update summary generated
+2023-07-20T13:08:28.440+06:00  INFO 13060 --- [main] liquibase.command                        : Update command completed successfully.
+2023-07-20T13:08:28.472+06:00  INFO 13060 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-07-20T13:08:28.486+06:00  INFO 13060 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-07-20T13:08:28.488+06:00  INFO 13060 --- [main] liquibase.command                        : Command execution complete
+2023-07-20T13:08:28.776+06:00  INFO 13060 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8778 (http) with context path ''
+2023-07-20T13:08:28.803+06:00  INFO 13060 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 13.677 seconds (process running for 16.705)
+2023-07-20T13:16:15.371+06:00  INFO 13060 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-20T13:16:15.395+06:00  INFO 13060 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

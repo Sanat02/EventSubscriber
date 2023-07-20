@@ -1,0 +1,43 @@
+databaseChangeLog:
+  - changeSet:
+      id: 01-insert-initial-data
+      author: Sanat
+      changes:
+        - insert:
+            tableName: events
+            columns:
+              - column:
+                  name: dateAndTime
+                  value: '2023-07-19 14:30:00'
+              - column:
+                  name: name
+                  value: 'Running marathon'
+              - column:
+                  name: description
+                  value: 'You will run a 10km'
+
+        - insert:
+            tableName: events
+            columns:
+              - column:
+                  name: dateAndTime
+                  value: '2023-06-20 10:00:00'
+              - column:
+                  name: name
+                  value: 'Hackaton'
+              - column:
+                  name: description
+                  value: 'You will make AI to speak language'
+        - insert:
+            tableName: events
+            columns:
+              - column:
+                  name: dateAndTime
+                  value: '2023-07-19 10:00:00'
+              - column:
+                  name: name
+                  value: 'Cinemarica'
+              - column:
+                  name: description
+                  value: 'Watching 3 american movies'
+

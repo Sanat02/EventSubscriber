@@ -1,0 +1,29 @@
+databaseChangeLog:
+  - changeSet:
+      id: 04-insert-event-subscribers-table
+      author: Sanat
+      changes:
+        - insert:
+            tableName: event_subscribers
+            columns:
+              - column:
+                  name: eventId
+                  value: 2
+              - column:
+                  name: email
+                  value: dia@gmail.com
+              - column:
+                  name: registrationDate
+                  value: '2023-06-19 10:00:00'
+        - insert:
+            tableName: event_subscribers
+            columns:
+              - column:
+                  name: eventId
+                  value: 2
+              - column:
+                  name: email
+                  value: bayan@gmail.com
+              - column:
+                  name: registrationDate
+                  value: '2023-06-18 10:00:00'
