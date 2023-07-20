@@ -1,17 +1,19 @@
 package com.example.demo.service;
 
-import com.example.demo.dao.EventDao;
+
 import com.example.demo.dao.EventSubscribeDao;
 import com.example.demo.dto.EventSubscribeDto;
-import com.example.demo.models.Event;
+
 import com.example.demo.models.EventSubscribers;
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.HttpStatus;
+
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
+@Slf4j
 @Service
 @RequiredArgsConstructor
 public class EventSubscribeService {
@@ -20,14 +22,17 @@ public class EventSubscribeService {
 
     public String subscribeToEvent(EventSubscribeDto eventSubscribeDto) {
         if (eventService.getEventById(eventSubscribeDto.getEventId()) == null) {
+            log.error("The value is null!");
             return "This id does not exists!";
         }
         LocalDateTime eventDateTime = eventService.getEventById(eventSubscribeDto.
                 getEventId()).getDateAndTime();
         if (eventDateTime.isBefore(LocalDateTime.now())) {
+            log.warn("The date is expired:"+eventDateTime);
             return "Date is expired!";
         } else {
             if (eventSubscribeDao.getByIdAndEmail(eventSubscribeDto.getEventId(), eventSubscribeDto.getEmail()) != null) {
+                log.warn("You already registered to the event");
                 return "You already registered to the event with id:" + eventSubscribeDto.getEventId();
             }
 
