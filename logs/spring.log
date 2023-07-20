@@ -891,3 +891,35 @@ More locations can be added with the 'searchPath' parameter.
 2023-07-20T13:08:28.803+06:00  INFO 13060 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 13.677 seconds (process running for 16.705)
 2023-07-20T13:16:15.371+06:00  INFO 13060 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2023-07-20T13:16:15.395+06:00  INFO 13060 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-07-20T13:16:26.529+06:00  INFO 17488 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.2 with PID 17488 (C:\Users\User\Downloads\Subcriber\demo\target\classes started by User in C:\Users\User\Downloads\Subcriber\demo)
+2023-07-20T13:16:26.538+06:00  INFO 17488 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T13:16:30.422+06:00  INFO 17488 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8778 (http)
+2023-07-20T13:16:30.452+06:00  INFO 17488 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T13:16:30.453+06:00  INFO 17488 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T13:16:30.828+06:00  INFO 17488 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T13:16:30.830+06:00  INFO 17488 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4083 ms
+2023-07-20T13:16:32.351+06:00  INFO 17488 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-20T13:16:32.677+06:00  INFO 17488 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./db/my_db user=ROOT
+2023-07-20T13:16:32.683+06:00  INFO 17488 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-20T13:16:32.988+06:00  INFO 17488 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-07-20T13:16:34.014+06:00  INFO 17488 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-07-20T13:16:35.165+06:00  INFO 17488 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-07-20T13:16:35.421+06:00  INFO 17488 --- [main] liquibase.command                        : Using deploymentId: 9837395182
+2023-07-20T13:16:35.427+06:00  INFO 17488 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-07-20T13:16:35.504+06:00  INFO 17488 --- [main] liquibase.changelog                      : New row inserted into event_subscribers
+2023-07-20T13:16:35.519+06:00  INFO 17488 --- [main] liquibase.changelog                      : New row inserted into event_subscribers
+2023-07-20T13:16:35.523+06:00  INFO 17488 --- [main] liquibase.changelog                      : ChangeSet db/changelog/initial/004_insert_subscribers_table.yaml::04-insert-event-subscribers-table::Sanat ran successfully in 34ms
+2023-07-20T13:16:35.550+06:00  INFO 17488 --- [main] liquibase.util                           : UPDATE SUMMARY
+2023-07-20T13:16:35.555+06:00  INFO 17488 --- [main] liquibase.util                           : Run:                          1
+2023-07-20T13:16:35.557+06:00  INFO 17488 --- [main] liquibase.util                           : Previously run:               3
+2023-07-20T13:16:35.558+06:00  INFO 17488 --- [main] liquibase.util                           : Filtered out:                 0
+2023-07-20T13:16:35.560+06:00  INFO 17488 --- [main] liquibase.util                           : -------------------------------
+2023-07-20T13:16:35.561+06:00  INFO 17488 --- [main] liquibase.util                           : Total change sets:            4
+
+2023-07-20T13:16:35.563+06:00  INFO 17488 --- [main] liquibase.util                           : Update summary generated
+2023-07-20T13:16:35.566+06:00  INFO 17488 --- [main] liquibase.command                        : Update command completed successfully.
+2023-07-20T13:16:35.583+06:00  INFO 17488 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-07-20T13:16:35.597+06:00  INFO 17488 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-07-20T13:16:35.599+06:00  INFO 17488 --- [main] liquibase.command                        : Command execution complete
+2023-07-20T13:16:36.047+06:00  INFO 17488 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8778 (http) with context path ''
+2023-07-20T13:16:36.070+06:00  INFO 17488 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 11.361 seconds (process running for 13.726)
