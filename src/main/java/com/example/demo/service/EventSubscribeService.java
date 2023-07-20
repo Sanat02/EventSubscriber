@@ -3,6 +3,7 @@ package com.example.demo.service;
 import com.example.demo.dao.EventDao;
 import com.example.demo.dao.EventSubscribeDao;
 import com.example.demo.dto.EventSubscribeDto;
+import com.example.demo.models.Event;
 import com.example.demo.models.EventSubscribers;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -53,4 +54,7 @@ public class EventSubscribeService {
 
     }
 
+    public String deleteSubscriber(int id,String email) {
+        return eventSubscribeDao.deleteSubscriber(id,email);
+    }
 }

@@ -2,6 +2,7 @@ package com.example.demo.dao;
 
 import com.example.demo.models.EventSubscribers;
 import lombok.RequiredArgsConstructor;
+import org.springframework.dao.DataAccessException;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.http.HttpStatus;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
@@ -37,9 +38,20 @@ public class EventSubscribeDao {
         }
     }
 
-    public List<EventSubscribers> getSubscribersByEmail(String email){
-        String sql="SELECT * FROM event_subscribers WHERE email = ?";
-        return jdbcTemplate.query(sql,new BeanPropertyRowMapper<>(EventSubscribers.class),email);
+    public List<EventSubscribers> getSubscribersByEmail(String email) {
+        String sql = "SELECT * FROM event_subscribers WHERE email = ?";
+        return jdbcTemplate.query(sql, new BeanPropertyRowMapper<>(EventSubscribers.class), email);
 
     }
+
+    public String deleteSubscriber(int id, String email) {
+        String sql = "DELETE from event_subscribers WHERE id = ? AND email = ?";
+        int rowIsAffected = jdbcTemplate.update(sql, id, email);
+        if(rowIsAffected!=1){
+            return "No such data";
+        }
+        return "SUCCESSFUL DELETE!";
+
+    }
+
 }

@@ -26,4 +26,10 @@ public class EventSubscribeController {
     public List<EventSubscribeDto> getSubscribersByEmail(@PathVariable String email){
         return eventSubscribeService.getSubscribersByEmail(email);
     }
+
+    @DeleteMapping("/email/{email}/id/{id}")
+    public String deleteSubscriber(@PathVariable String email,@PathVariable int id) {
+        return eventSubscribeService.deleteSubscriber(id,email);
+
+    }
 }
